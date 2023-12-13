@@ -1,0 +1,40 @@
+import math
+
+def calcola_perimetro_figure():
+    print("Programma per calcolo perimetro delle figure")
+    print("Scegli figura:")
+    print("1 - Quadrato")
+    print("2 - Cerchio")
+    print("3 - Rettangolo")
+
+        
+    while True:
+        
+        scelta = int(input(">>> "))
+        
+        if scelta == 1:
+            print("Hai selezionato Quadrato")
+            latoQuadrato = float(input("Inserisci lunghezza del lato in centimetri: "))
+            perimetroQuadrato = float(latoQuadrato * 4)
+            print("Il perimetro del quadrato è:", perimetroQuadrato, "cm")
+            break
+        elif scelta == 2:
+            print("Hai selezionato Cerchio")
+            raggio = float(input("Inserisci il raggio in centimetri: "))
+            PGreco = 3.14
+            perimetroCerchio = float(2*(PGreco * raggio))
+            print("Il perimetro del cerchio è:", perimetroCerchio, "cm")
+            break
+        elif scelta == 3:
+            print("Hai selezionato il Rettangolo")
+            base = float(input("Inserisci la lunghezza della base in centimetri: "))
+            altezza = float(input("Inserisci il valore dell'altezza in centimetri: "))
+            perimetroRettangolo = float((base * 2)+(altezza *2))
+            print("Il perimetro del Rettangolo è:", perimetroRettangolo, "cm")
+            break
+        else:
+            print("Inserire una scelta valida")
+
+
+#chiamiamo la funzione 
+calcola_perimetro_figure()
